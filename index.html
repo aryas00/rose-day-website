@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day, Daddu ❤️ | A Special Day for You</title>
+    <meta name="description" content="A romantic Rose Day celebration website with love, roses, and special memories.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-heart">💕</div>
+    <div id="particles-container"></div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+        <span class="music-on">🎵</span>
+        <span class="music-off">🔇</span>
+    </button>
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="floating-bouquet">
+                <div class="rose rose-1">🌹</div>
+                <div class="rose rose-2">🌹</div>
+                <div class="rose rose-3">🌹</div>
+                <div class="rose rose-4">🌹</div>
+                <div class="rose rose-5">🌹</div>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-word">Happy</span>
+                <span class="title-word">Rose</span>
+                <span class="title-word">Day,</span>
+                <span class="title-word highlight">Daddu</span>
+                <span class="title-heart">❤️</span>
+            </h1>
+            <p class="hero-subtitle pixel-text">All these flowers and I'd still give you more!</p>
+            <div class="scroll-indicator">
+                <span>Scroll for more love</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+        <div class="hero-doodles">
+            <div class="doodle doodle-1">✿</div>
+            <div class="doodle doodle-2">♡</div>
+            <div class="doodle doodle-3">❀</div>
+            <div class="doodle doodle-4">♥</div>
+            <div class="doodle doodle-5">✾</div>
+        </div>
+    </section>
+    <section class="magic-rose-section" id="magicRose">
+        <div class="section-header">
+            <h2 class="pixel-text">✨ Click the Magic Rose ✨</h2>
+            <p>Something special awaits...</p>
+        </div>
+        <div class="magic-rose-container">
+            <div class="single-rose" id="singleRose">
+                <div class="rose-stem"></div>
+                <div class="rose-head">🌹</div>
+                <div class="rose-glow"></div>
+                <p class="click-hint">Tap me!</p>
+            </div>
+            <div class="bouquet-reveal" id="bouquetReveal">
+                <div class="bouquet-roses">
+                    <span>🌹</span><span>🌹</span><span>🌹</span>
+                    <span>🌹</span><span>🌹</span><span>🌹</span>
+                    <span>🌹</span><span>🌹</span><span>🌹</span>
+                </div>
+                <div class="sparkle-container" id="sparkles"></div>
+                <div class="reveal-message">
+                    <span class="message-text">Happy Rose Day you phool</span>
+                    <span class="message-emoji">🌹😜</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="love-message-section" id="loveMessage">
+        <div class="typewriter-container">
+            <div class="pixel-border">
+                <div class="typewriter-content">
+                    <span class="typewriter-text" id="typewriterText"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+            </div>
+        </div>
+        <div class="floating-petals">
+            <div class="petal petal-1">🌸</div>
+            <div class="petal petal-2">🌸</div>
+            <div class="petal petal-3">🌸</div>
+            <div class="petal petal-4">💮</div>
+            <div class="petal petal-5">🌸</div>
+        </div>
+    </section>
+    <section class="gift-section" id="giftSection">
+        <div class="section-header">
+            <h2 class="pixel-text">🎁 Open Your Gift! 🎁</h2>
+            <p>A special surprise just for you...</p>
+        </div>
+        <div class="gift-container">
+            <div class="gift-box" id="giftBox">
+                <div class="gift-lid">
+                    <div class="gift-bow">🎀</div>
+                </div>
+                <div class="gift-base">
+                    <div class="gift-pattern"></div>
+                </div>
+                <p class="gift-hint">Click to open!</p>
+            </div>
+            <div class="gift-surprise" id="giftSurprise">
+                <div class="surprise-roses">
+                    <span class="pop-rose">🌹</span>
+                    <span class="pop-rose">🌹</span>
+                    <span class="pop-rose">🌹</span>
+                    <span class="pop-rose">🌹</span>
+                    <span class="pop-rose">🌹</span>
+                </div>
+                <div class="surprise-message">
+                    <p>A bouquet of love for you! 💕</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="playground-section" id="playground">
+        <div class="section-header">
+            <h2 class="pixel-text">🎮 Love Playground 🎮</h2>
+            <p>Drag the hearts and roses around!</p>
+        </div>
+        <div class="playground-area" id="playgroundArea">
+            <div class="draggable-item" data-type="heart">💕</div>
+            <div class="draggable-item" data-type="rose">🌹</div>
+            <div class="draggable-item" data-type="note">💌</div>
+            <div class="draggable-item" data-type="flower">🌸</div>
+            <div class="draggable-item" data-type="heart2">💗</div>
+            <div class="draggable-item" data-type="sparkle">✨</div>
+        </div>
+    </section>
+    <section class="love-letter-section" id="loveLetter">
+        <div class="letter-container">
+            <div class="letter-envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <span class="envelope-heart">💌</span>
+                </div>
+            </div>
+            <div class="letter-content" id="letterContent">
+                <div class="letter-paper">
+                    <h3>My Dearest Daddu,</h3>
+                    <p>
+                        On this Rose Day, I want you to know that you are the most beautiful flower in my garden of life.
+                        Every moment with you is like a petal of joy added to our story. 🌹
+                    </p>
+                    <p>
+                        You make my heart bloom with happiness, and I fall in love with you more each day.
+                        Thank you for being my sunshine, my laughter, and my everything! 💕
+                    </p>
+                    <p class="letter-signature">
+                        Forever yours,<br>
+                        With endless love 💝
+                    </p>
+                </div>
+                <button class="send-love-btn" id="sendLoveBtn">
+                    Send My Love 💕
+                </button>
+            </div>
+        </div>
+        <div class="heart-explosion" id="heartExplosion"></div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Made with 💕 for my special person</p>
+            <div class="footer-roses">🌹 🌹 🌹</div>
+            <p class="pixel-text">Happy Rose Day!</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
